@@ -1,5 +1,8 @@
 import React, { ReactNode } from 'react'
 
+/**
+ * Home画面のメインレイアウト
+ */
 const HomeLayout = ({ children }: { children: ReactNode }) => {
   return (
     <main className='relative'>
