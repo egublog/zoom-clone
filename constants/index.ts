@@ -1,3 +1,7 @@
+/**
+ * サイドバーのリンク情報を定義します。
+ * 各リンクはラベル、ルート、アイコンのURLを持ちます。
+ */
 export const sidebarLinks = [
 	{
 		label: 'Home',
