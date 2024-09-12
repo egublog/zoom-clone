@@ -1,5 +1,10 @@
 import React from 'react'
 
+/**
+ * Upcomingコンポーネント
+ *
+ * このコンポーネントは、"Upcoming"セクションを表示します。
+ */
 const Upcoming = () => {
   return (
     <section className='flex size-full flex-col gap-10 text-white'>
