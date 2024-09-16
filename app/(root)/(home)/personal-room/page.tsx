@@ -1,5 +1,10 @@
 import React from 'react'
 
+/**
+ * PersonalRoomコンポーネント
+ *
+ * このコンポーネントは、"PersonalRoom"セクションを表示します。
+ */
 const PersonalRoom = () => {
   return (
     <section className='flex size-full flex-col gap-10 text-white'>
