@@ -1,5 +1,10 @@
 import React from 'react'
 
+/**
+ * Homeコンポーネント
+ *
+ * このコンポーネントは、"Home"セクションを表示します。
+ */
 const Home = () => {
   return (
     <section className='flex size-full flex-col gap-10 text-white'>
