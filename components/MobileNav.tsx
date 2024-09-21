@@ -8,6 +8,11 @@ import { Sheet, SheetClose, SheetContent, SheetTrigger } from '@/components/ui/s
 import { sidebarLinks } from '@/constants';
 import { cn } from '@/lib/utils';
 
+/**
+ * MobileNavコンポーネント
+ *
+ * このコンポーネントは、モバイルナビゲーションメニューを表示します。
+ */
 const MobileNav = () => {
   const pathname = usePathname();
 
