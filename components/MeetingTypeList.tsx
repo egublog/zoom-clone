@@ -12,6 +12,12 @@ const initialValues = {
   link: '',
 };
 
+/**
+ * MeetingTypeListコンポーネント
+ *
+ * このコンポーネントは、利用可能な会議の種類をリスト表示します。
+ * 各会議タイプはリストアイテムとして表示され、ユーザーが選択できるようになります。
+ */
 const MeetingTypeList = () => {
   const router = useRouter();
   const [meetingState, setMeetingState] = useState<
@@ -19,7 +25,7 @@ const MeetingTypeList = () => {
   >(undefined);
 
   const createMeeting = () => {
-    
+
   }
 
   return (
