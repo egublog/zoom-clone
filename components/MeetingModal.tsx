@@ -6,16 +6,27 @@ import { Button } from "./ui/button";
 import Image from "next/image";
 
 interface MeetingModalProps {
+  /** モーダルが開いているかどうかを示すフラグ */
   isOpen: boolean;
+  /** モーダルを閉じるためのコールバック関数 */
   onClose: () => void;
+  /** モーダルのタイトル */
   title: string;
+  /** タイトルに適用する追加のクラス名 */
   className?: string;
+  /** モーダル内に表示する追加のコンテンツ */
   children?: ReactNode;
+  /** ボタンがクリックされたときのコールバック関数 */
   handleClick?: () => void;
+  /** ボタンに表示するテキスト */
   buttonText?: string;
+  /** 即時会議を示すフラグ（使用されている場合） */
   instantMeeting?: boolean;
+  /** モーダルに表示する画像のURL */
   image?: string;
+  /** ボタンに適用する追加のクラス名 */
   buttonClassName?: string;
+  /** ボタンに表示するアイコンのURL */
   buttonIcon?: string;
 }
 
@@ -24,18 +35,6 @@ interface MeetingModalProps {
  *
  * このコンポーネントは、会議の詳細を表示するモーダルウィンドウを提供します。
  * モーダルは、タイトル、オプションの画像、カスタムボタンを含むことができます。
- *
- * @param isOpen - モーダルが開いているかどうかを示すフラグ
- * @param onClose - モーダルを閉じるためのコールバック関数
- * @param title - モーダルのタイトル
- * @param className - タイトルに適用する追加のクラス名
- * @param children - モーダル内に表示する追加のコンテンツ
- * @param handleClick - ボタンがクリックされたときのコールバック関数
- * @param buttonText - ボタンに表示するテキスト
- * @param instantMeeting - 即時会議を示すフラグ（使用されている場合）
- * @param image - モーダルに表示する画像のURL
- * @param buttonClassName - ボタンに適用する追加のクラス名
- * @param buttonIcon - ボタンに表示するアイコンのURL
  */
 const MeetingModal = ({
   isOpen,
