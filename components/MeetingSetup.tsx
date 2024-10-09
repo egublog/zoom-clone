@@ -8,6 +8,9 @@ import {
 
 import { Button } from './ui/button';
 
+/**
+ * ミーティングのセットアップ画面
+ */
 const MeetingSetup = ({
   setIsSetupComplete,
 }: {
