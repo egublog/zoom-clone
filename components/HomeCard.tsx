@@ -5,13 +5,26 @@ import Image from 'next/image';
 import { cn } from '@/lib/utils';
 
 interface HomeCardProps {
+  /** カードに適用する追加のクラス名 */
   className?: string;
+  /** カードに表示する画像のURL */
   img: string;
+  /** カードのタイトル */
   title: string;
+  /** カードの説明 */
   description: string;
+  /** カードがクリックされたときのコールバック関数 */
   handleClick?: () => void;
 }
 
+/**
+ * HomeCardコンポーネント
+ *
+ * このコンポーネントは、ホームページ上でカード形式の情報を表示します。
+ * 画像、タイトル、説明を含み、クリック可能なカードを提供します。
+ *
+ * @returns JSX.Element - 表示するカードの要素
+ */
 const HomeCard = ({ className, img, title, description, handleClick }: HomeCardProps) => {
   return (
     <section
