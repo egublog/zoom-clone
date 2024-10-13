@@ -5,6 +5,12 @@ import { useCall, useCallStateHooks } from '@stream-io/video-react-sdk';
 import { Button } from './ui/button';
 import { useRouter } from 'next/navigation';
 
+/**
+ * EndCallButtonコンポーネント
+ *
+ * このコンポーネントは、会議を終了するためのボタンを提供します。
+ * ユーザーが会議のオーナーである場合にのみ表示され、クリックすると会議を終了し、ホームページにリダイレクトします。
+ */
 const EndCallButton = () => {
   const call = useCall();
   const router = useRouter();
