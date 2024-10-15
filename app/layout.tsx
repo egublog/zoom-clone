@@ -14,6 +14,15 @@ export const metadata: Metadata = {
   }
 };
 
+/**
+ * RootLayoutコンポーネント
+ *
+ * このコンポーネントは、アプリケーション全体のレイアウトを定義します。
+ * ClerkProviderを使用して認証機能を提供し、Toasterを使用して通知を表示します。
+ *
+ * @param children - レイアウト内にレンダリングされる子要素
+ * @returns JSX.Element - アプリケーションのルートレイアウト要素
+ */
 export default function RootLayout({
   children,
 }: Readonly<{
