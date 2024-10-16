@@ -1,4 +1,5 @@
 import React from 'react'
+import CallList from '@/components/CallList'
 
 /**
  * Upcomingコンポーネント
@@ -12,6 +13,7 @@ const Upcoming = () => {
         Upcoming
       </h1>
 
+    <CallList type="upcoming" />
     </section>
   )
 }
