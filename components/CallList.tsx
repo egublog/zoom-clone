@@ -8,6 +8,15 @@ import MeetingCard from './MeetingCard';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
+/**
+ * CallListコンポーネント
+ *
+ * このコンポーネントは、終了した通話、今後の通話、または録画された通話のリストを表示します。
+ * 通話の種類に応じて、適切なリストを取得し、表示します。
+ *
+ * @param type - 表示する通話の種類（'ended', 'upcoming', 'recordings'のいずれか）
+ * @returns JSX.Element - 通話リストを表示する要素
+ */
 const CallList = ({ type }: { type: 'ended' | 'upcoming' | 'recordings' }) => {
   const router = useRouter();
   const { endedCalls, upcomingCalls, callRecordings, isLoading } =
