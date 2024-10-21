@@ -9,16 +9,33 @@ import { useToast } from "@/hooks/use-toast";
 
 
 interface MeetingCardProps {
+  /** カードのタイトル */
   title: string;
+  /** 会議の日付 */
   date: string;
+  /** アイコンのURL */
   icon: string;
+  /** 過去の会議かどうかを示すフラグ */
   isPreviousMeeting?: boolean;
+  /** ボタンに表示するアイコンのURL */
   buttonIcon1?: string;
+  /** ボタンに表示するテキスト */
   buttonText?: string;
+  /** ボタンがクリックされたときのコールバック関数 */
   handleClick: () => void;
+  /** クリップボードにコピーするリンク */
   link: string;
 }
 
+/**
+ * MeetingCardコンポーネント
+ *
+ * このコンポーネントは、会議の詳細を表示するカードを提供します。
+ * 会議のタイトル、日付、アイコン、参加者のアバター、およびアクションボタンを含みます。
+ *
+ * @param param0 - MeetingCardPropsオブジェクト
+ * @returns JSX.Element - 会議カードを表示する要素
+ */
 const MeetingCard = ({
   icon,
   title,
