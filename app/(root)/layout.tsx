@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   }
 };
 
+/**
+ * ルートレイアウト
+ */
 const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
   return (
     <main>
