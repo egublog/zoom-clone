@@ -12,7 +12,13 @@ export const metadata: Metadata = {
 };
 
 /**
- * ルートレイアウト
+ * RootLayoutコンポーネント
+ *
+ * このコンポーネントは、アプリケーション全体のレイアウトを定義します。
+ * StreamVideoProviderを使用して、子要素にビデオストリーミング機能を提供します。
+ *
+ * @param children - レイアウト内にレンダリングされる子要素
+ * @returns JSX.Element - アプリケーションのルートレイアウト要素
  */
 const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
   return (
