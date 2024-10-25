@@ -10,6 +10,11 @@ import { Button } from './ui/button';
 
 /**
  * ミーティングのセットアップ画面
+ *
+ * @param param0 - オブジェクトのプロパティ
+ *   - setIsSetupComplete: セットアップが完了したことを示すための関数
+ *
+ * @returns ミーティングのセットアップUIを含むReactコンポーネント
  */
 const MeetingSetup = ({
   setIsSetupComplete,
