@@ -25,6 +25,14 @@ import { cn } from '@/lib/utils';
 
 type CallLayoutType = 'grid' | 'speaker-left' | 'speaker-right';
 
+/**
+ * MeetingRoomコンポーネント
+ *
+ * このコンポーネントは、ビデオ会議のインターフェースを提供します。
+ * ユーザーは、異なるレイアウトを選択し、参加者リストを表示し、通話を終了することができます。
+ *
+ * @returns JSX.Element - ビデオ会議のインターフェースを表示する要素
+ */
 const MeetingRoom = () => {
   const searchParams = useSearchParams();
   const isPersonalRoom = !!searchParams.get('personal');
