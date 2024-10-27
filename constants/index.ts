@@ -30,6 +30,12 @@ export const sidebarLinks = [
 	},
 ];
 
+/**
+ * アバター画像のパスを格納した配列
+ *
+ * この配列は、ユーザーのプロフィール画像として使用される
+ * アバター画像のパスを提供します。
+ */
 export const avatarImages = [
   '/images/avatar-1.jpeg',
   '/images/avatar-2.jpeg',
